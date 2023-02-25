@@ -1,0 +1,281 @@
+:root
+{
+  --psu-white: #ffffff;
+  --psu-light-blue: #97bde4;
+  --psu-dark-blue: #002552;
+}
+
+body 
+{
+  font-family: "Lemon MILK";
+  font-weight: bold;
+  letter-spacing: 1;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25))
+    drop-shadow(0 3px 1px rgba(0, 0, 0, 0.36))
+    drop-shadow(0 1px 5px rgba(0, 0, 0, 0.25))
+    drop-shadow(0 -1px 2px rgba(0, 0, 0, 0.18)); 
+  visibility: hidden;
+}
+
+.saps-logo
+{
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 110px;
+  background-image: url("./Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9;
+}
+
+.container
+{
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 608px;
+  height: 91px;
+  top: 14px;
+  background: var(--psu-white);
+  border-radius: 12px;
+  padding-top: 4px;
+}
+
+.p1.container
+{
+  background-position: 100% 0;
+  left: 280px;
+}
+
+.p2.container
+{
+  background-position: 100% 0;
+  right: 280px;
+}
+
+.inner-container
+{
+  width: 600px;
+  height: 53px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: var(--psu-dark-blue);
+  white-space: nowrap;
+  margin-left: 4px;
+  margin-bottom: 17px;
+}
+
+.p1 .inner-container
+{
+  flex-direction: row;
+}
+
+.p2 .inner-container
+{
+  flex-direction: row-reverse;
+}
+
+.name
+{
+  display: flex;
+  width: 100%;
+  height: 53px;
+  font-size: 27px;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 12px;
+  flex-direction: row;
+  overflow: hidden;
+  color: var(--psu-white);
+  position: relative;
+  top: 15%;
+}
+
+.sponsor
+{
+  margin-right: 10px;
+  color: var(--psu-light-blue);
+}
+
+.score-container
+{
+  text-align: center;
+  width: 62px;
+  height: 53px;
+  font-size: 35px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  color: var(--psu-white);
+}
+
+.p1 .score-container
+{
+  border-left: 4px solid var(--psu-white);
+}
+
+.p2 .score-container
+{
+  border-right: 4px solid var(--psu-white);
+}
+
+.tournament-container
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 1%;
+  bottom: 15px;
+}
+
+.match-container
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 1%;
+  bottom: 15px;  
+}
+
+.losers-container
+{
+  position: relative;
+  display: flex;
+  width: 598px;
+  height: 10px;
+}
+
+.tournament-container .losers-container
+{
+  flex-direction: row;
+  justify-content: end;
+}
+
+.match-container .losers-container
+{
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+.tournament
+{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  color: var(--psu-dark-blue);
+  height: 1%;
+  font-size: 20px;
+  justify-content: center;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-55%);
+}
+
+.match
+{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 1%;
+  color: var(--psu-dark-blue);
+  font-size: 20px;
+  justify-content: center;
+  right: 50%;
+  transform: translateX(55%);
+}
+
+.losers
+{
+  display: flex;
+  width: 62px;
+  height: 53px;
+  font-size: 23px;
+  color: var(--psu-dark-blue);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+}
+
+.p1 .losers
+{
+  right: 0;
+  transform: translateY(-10%);
+}
+
+.p2 .losers
+{
+  left: 0;
+  transform: translateX(10%) translateY(-10%);
+}
+
+.info-container
+{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 348px;
+  height: 43px;
+  color: var(--psu-white);
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  top: 821px;
+  background: var(--psu-dark-blue);
+  border: 2px solid var(--psu-white);
+  border-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.info
+{
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.p1.info-container
+{
+  left: 25px;
+}
+
+.p2.info-container
+{
+  right: 25px;
+}
+
+.twitter-logo
+{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 3px;
+
+  -webkit-mask-image: url(./twitter.svg);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+
+  background: var(--psu-white);
+}
