@@ -317,7 +317,7 @@
           player2InfoContainer.animate(fadeInKeyframes, { duration: 200 }).onfinish = () =>
           {
             player2InfoContainer.style.opacity = 1.0;
-          };player1
+          };
 
           //Fade the player's pronouns in
           setTimeout(() =>
